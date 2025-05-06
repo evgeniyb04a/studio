@@ -12,81 +12,81 @@ async function getNewsArticle(slug: string) {
 
   const articles: { [key: string]: any } = {
     'volkh-reveal': {
-      title: "New Character Revealed: Volkh",
+      title: "Представлен новый персонаж: Волх",
       date: "2024-07-20",
-      category: "Characters",
+      category: "Персонажи",
       imageUrl: "https://picsum.photos/1200/600?random=1",
       imageAiHint: "character reveal splash",
       content: `
-        <p>Prepare yourselves, heroes of Gardariki! A new force emerges from the shadows – Volkh, the Enigmatic Sorcerer, will soon join the playable roster in update 1.3!</p>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">Master of Illusions and Hexes</h2>
-        <p>Volkh wields powers drawn from the twilight realms, specializing in illusion magic and debilitating curses. His unique abilities allow him to manipulate the battlefield, turning enemies' strengths against them and sowing confusion in their ranks.</p>
+        <p>Готовьтесь, герои Гардарики! Новая сила появляется из тени – Волх, Загадочный Колдун, скоро присоединится к играбельному составу в обновлении 1.3!</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Мастер иллюзий и проклятий</h2>
+        <p>Волх владеет силами, почерпнутыми из сумеречных миров, специализируясь на магии иллюзий и ослабляющих проклятиях. Его уникальные способности позволяют ему манипулировать полем боя, обращая сильные стороны врагов против них самих и сея хаос в их рядах.</p>
         <ul class="list-disc space-y-2 pl-6 my-4">
-          <li><strong>Shadow Step:</strong> Briefly become invisible and reposition, leaving behind a decoy that explodes.</li>
-          <li><strong>Whispers of Nav:</strong> Curse an area, slowing enemies and making them vulnerable to magical damage.</li>
-          <li><strong>Umbral Pact (Ultimate):</strong> Unleash a wave of dark energy, temporarily charming weaker enemies to fight for you.</li>
+          <li><strong>Шаг в тень:</strong> Кратковременно станьте невидимым и переместитесь, оставив позади взрывающуюся приманку.</li>
+          <li><strong>Шепот Нави:</strong> Прокляните область, замедляя врагов и делая их уязвимыми к магическому урону.</li>
+          <li><strong>Сумрачный Пакт (Ультимейт):</strong> Высвободите волну темной энергии, временно очаровывая слабых врагов, чтобы они сражались за вас.</li>
         </ul>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">A Past Shrouded in Mystery</h2>
-        <p>Little is known about Volkh's origins, other than whispers connecting him to ancient pacts made in the depths of Nav. Some say he seeks redemption, others claim he pursues forbidden knowledge. Unravel his story through his character questline coming in the update.</p>
-        <p>Get ready to master the shadows when Volkh arrives! Stay tuned for more details on update 1.3.</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Прошлое, окутанное тайной</h2>
+        <p>О происхождении Волха известно мало, кроме шепота, связывающего его с древними пактами, заключенными в глубинах Нави. Некоторые говорят, что он ищет искупления, другие утверждают, что он преследует запретные знания. Раскройте его историю через квестовую линию персонажа, которая появится в обновлении.</p>
+        <p>Приготовьтесь овладеть тенями, когда прибудет Волх! Следите за новостями для получения дополнительной информации об обновлении 1.3.</p>
       `
     },
     'frostfang-peaks': {
-        title: "Explore the Frostfang Peaks",
+        title: "Исследуйте Морозные Пики",
         date: "2024-07-15",
-        category: "World Update",
+        category: "Обновление мира",
         imageUrl: "https://picsum.photos/1200/600?random=2",
         imageAiHint: "snowy mountain landscape",
         content: `
-        <p>Brave the chilling winds and treacherous paths of the Frostfang Peaks, a massive new region coming soon to Gardariki! This update expands the world map significantly, offering hours of new exploration and challenges.</p>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">A Realm of Ice and Legend</h2>
-        <p>Located in the unforgiving north, the Frostfang Peaks are dominated by towering, ice-capped mountains, frozen rivers, and ancient ruins swallowed by glaciers. Legends speak of powerful frost spirits and slumbering titans within these peaks.</p>
-        <h3 class="mt-4 mb-2 text-xl font-semibold">New Features:</h3>
+        <p>Бросьте вызов леденящим ветрам и коварным тропам Морозных Пиков, огромного нового региона, который скоро появится в Гардарике! Это обновление значительно расширяет карту мира, предлагая часы новых исследований и испытаний.</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Царство льда и легенд</h2>
+        <p>Расположенные на неумолимом севере, Морозные Пики доминируют towering, покрытыми льдом горами, замерзшими реками и древними руинами, поглощенными ледниками. Легенды говорят о могущественных духах мороза и дремлющих титанах в этих пиках.</p>
+        <h3 class="mt-4 mb-2 text-xl font-semibold">Новые возможности:</h3>
         <ul class="list-disc space-y-2 pl-6 my-4">
-            <li><strong>Dynamic Weather System:</strong> Experience blizzards and whiteouts that affect visibility and gameplay.</li>
-            <li><strong>New Enemy Types:</strong> Face off against Ice Jotuns, Frost Wyverns, and the elusive Snow Leopards.</li>
-            <li><strong>Challenging Dungeons:</strong> Delve into frozen caverns and ancient crypts filled with puzzles and powerful bosses.</li>
-            <li><strong>Unique Resources:</strong> Gather Frost Salts, Glacial Ores, and other materials needed for new crafting recipes.</li>
+            <li><strong>Динамическая система погоды:</strong> Испытайте метели и бураны, влияющие на видимость и геймплей.</li>
+            <li><strong>Новые типы врагов:</strong> Сразитесь с Ледяными Йотунами, Морозными Вивернами и неуловимыми Снежными Барсами.</li>
+            <li><strong>Сложные подземелья:</strong> Погрузитесь в замерзшие пещеры и древние крипты, полные головоломок и могущественных боссов.</li>
+            <li><strong>Уникальные ресурсы:</strong> Собирайте Морозные Соли, Ледниковые Руды и другие материалы, необходимые для новых рецептов крафта.</li>
         </ul>
-        <p>Prepare your warmest gear and sharpen your blades! The Frostfang Peaks await your discovery.</p>
+        <p>Готовьте самую теплую экипировку и точите клинки! Морозные Пики ждут вашего открытия.</p>
       `
     },
      // Add more articles corresponding to slugs
      'patch-1-2-5': {
-      title: "Patch Notes 1.2.5 Released",
+      title: "Выпущены заметки к патчу 1.2.5",
       date: "2024-07-05",
-      category: "Updates",
+      category: "Обновления",
       imageUrl: "https://picsum.photos/1200/600?random=4",
       imageAiHint: "game update scroll",
       content: `
-        <p>Gardariki version 1.2.5 is now live! This patch focuses on addressing community feedback, fixing bugs, and implementing several quality-of-life improvements.</p>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">Highlights:</h2>
+        <p>Версия Гардарики 1.2.5 теперь доступна! Этот патч сосредоточен на учете отзывов сообщества, исправлении ошибок и внедрении нескольких улучшений качества жизни.</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Основные моменты:</h2>
         <ul class="list-disc space-y-2 pl-6 my-4">
-          <li><strong>Combat Balancing:</strong> Adjusted damage values for Ratibor's 'Silent Arrow' ability. Increased stamina cost for heavy attacks.</li>
-          <li><strong>Bug Fixes:</strong> Resolved an issue where players could get stuck in the terrain near Whispering Woods. Fixed a bug causing quest markers not to display correctly in certain conditions. Addressed several minor visual glitches.</li>
-          <li><strong>Performance Improvements:</strong> Optimized loading times when entering major settlements. Improved frame rate stability during large-scale encounters.</li>
-          <li><strong>UI Enhancements:</strong> Added a search function to the inventory screen. Improved clarity of status effect icons.</li>
+          <li><strong>Балансировка боя:</strong> Скорректированы значения урона для способности Ратибора 'Тихая стрела'. Увеличена стоимость выносливости для тяжелых атак.</li>
+          <li><strong>Исправления ошибок:</strong> Устранена проблема, из-за которой игроки могли застрять в ландшафте возле Шепчущего Леса. Исправлена ошибка, из-за которой маркеры квестов не отображались корректно в определенных условиях. Устранены несколько незначительных визуальных сбоев.</li>
+          <li><strong>Улучшения производительности:</strong> Оптимизировано время загрузки при входе в крупные поселения. Улучшена стабильность частоты кадров во время масштабных столкновений.</li>
+          <li><strong>Улучшения интерфейса:</strong> Добавлена функция поиска на экране инвентаря. Улучшена четкость значков статусных эффектов.</li>
         </ul>
-        <p>Thank you for your continued feedback! Please refer to the in-game patch notes section for a complete list of changes.</p>
-        <p>Happy adventuring!</p>
+        <p>Спасибо за ваши постоянные отзывы! Пожалуйста, обратитесь к разделу заметок к патчу в игре для получения полного списка изменений.</p>
+        <p>Удачных приключений!</p>
       `
     },
     'dev-diary-atmosphere': {
-      title: "Developer Diary: Crafting Slavic Atmosphere",
+      title: "Дневник разработчика: Создание славянской атмосферы",
       date: "2024-06-28",
-      category: "Dev Diary",
+      category: "Дневник разработчика",
       imageUrl: "https://picsum.photos/1200/600?random=5",
       imageAiHint: "game art moodboard",
       content: `
-        <p>Hello Gardariki community! Today, members of our art and narrative teams want to share some insights into how we approach building the unique Slavic atmosphere of the game.</p>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">Drawing from Folklore</h2>
-        <p>Our primary inspiration comes directly from Slavic myths, legends, and folk tales. We delve into stories of deities like Perun and Veles, forest spirits like the Leshy, house guardians like the Domovoy, and water nymphs like the Rusalki. These figures inform not only our character designs but also the environmental storytelling and quest narratives.</p>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">Visual Language: Embroidery and Woodcraft</h2>
-        <p>Visually, we incorporate traditional Slavic motifs, particularly those found in embroidery (vyshyvanka) and wood carving. You'll see these patterns integrated into character clothing, architectural details, weapon designs, and even the UI elements. This helps create a cohesive and authentic visual identity.</p>
-        <h2 class="mt-6 mb-3 text-2xl font-semibold">Sound and Music</h2>
-        <p>The soundscape is crucial. Our composers blend traditional Slavic folk instruments (like the balalaika, gusli, and various flutes) with modern orchestral arrangements to create a score that feels both ancient and epic. Ambient sounds reflect the natural world described in folklore – the rustling leaves of enchanted forests, the calls of mythical birds, the whispers carried on the steppe winds.</p>
-        <p>Creating this atmosphere is an ongoing process, a careful balance of research, creativity, and respect for the source material. We hope you feel immersed in the world we're building!</p>
-        <p><em>- The Clockwork Drakkar Art & Narrative Teams</em></p>
+        <p>Привет, сообщество Гардарики! Сегодня члены наших команд по арту и нарративу хотят поделиться некоторыми мыслями о том, как мы подходим к созданию уникальной славянской атмосферы игры.</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Черпая из фольклора</h2>
+        <p>Наше основное вдохновение исходит непосредственно из славянских мифов, легенд и народных сказок. Мы погружаемся в истории божеств, таких как Перун и Велес, лесных духов, таких как Леший, домовых хранителей, таких как Домовой, и водяных нимф, таких как Русалки. Эти фигуры влияют не только на дизайн наших персонажей, но и на повествование через окружение и квестовые нарративы.</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Визуальный язык: Вышивка и резьба по дереву</h2>
+        <p>Визуально мы включаем традиционные славянские мотивы, особенно те, что встречаются в вышивке (вышиванка) и резьбе по дереву. Вы увидите эти узоры, интегрированные в одежду персонажей, архитектурные детали, дизайн оружия и даже элементы интерфейса. Это помогает создать целостную и аутентичную визуальную идентичность.</p>
+        <h2 class="mt-6 mb-3 text-2xl font-semibold">Звук и музыка</h2>
+        <p>Звуковой ландшафт имеет решающее значение. Наши композиторы смешивают традиционные славянские народные инструменты (такие как балалайка, гусли и различные флейты) с современными оркестровыми аранжировками, чтобы создать партитуру, которая ощущается одновременно древней и эпической. Окружающие звуки отражают природный мир, описанный в фольклоре – шелест листьев зачарованных лесов, крики мифических птиц, шепот, несомый степными ветрами.</p>
+        <p>Создание этой атмосферы – это непрерывный процесс, тщательный баланс исследований, творчества и уважения к исходному материалу. Мы надеемся, что вы почувствуете погружение в мир, который мы строим!</p>
+        <p><em>- Команды по арту и нарративу Clockwork Drakkar</em></p>
       `
     },
   };
@@ -99,7 +99,7 @@ export default async function NewsArticlePage({ params }: { params: { slug: stri
 
   if (!article) {
     // Handle not found case, maybe redirect or show a 404 component
-    return <div className="container mx-auto py-12 px-4 text-center">Article not found.</div>;
+    return <div className="container mx-auto py-12 px-4 text-center">Статья не найдена.</div>;
   }
 
   return (
@@ -108,7 +108,7 @@ export default async function NewsArticlePage({ params }: { params: { slug: stri
         <Button variant="outline" size="sm" asChild>
           <Link href="/news">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to News
+            Назад к новостям
           </Link>
         </Button>
       </div>
@@ -116,7 +116,7 @@ export default async function NewsArticlePage({ params }: { params: { slug: stri
       <article>
         <header className="mb-8">
            <div className="mb-4 flex items-center justify-between text-sm text-muted-foreground">
-              <span>Published on: {new Date(article.date).toLocaleDateString()}</span>
+              <span>Опубликовано: {new Date(article.date).toLocaleDateString()}</span>
               <Badge variant="secondary">{article.category}</Badge>
             </div>
           <h1 className="mb-4 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">{article.title}</h1>
@@ -150,4 +150,3 @@ export default async function NewsArticlePage({ params }: { params: { slug: stri
 //     slug,
 //   }));
 // }
-

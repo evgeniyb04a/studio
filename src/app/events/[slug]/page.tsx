@@ -12,26 +12,26 @@ async function getEventDetails(slug: string) {
 
   const events: { [key: string]: any } = {
     'summer-solstice': {
-      title: "Summer Solstice Festival Event",
+      title: "Событие: Фестиваль Летнего Солнцестояния",
       startDate: "2024-07-10",
       endDate: "2024-07-24",
-      category: "Limited-Time Event",
+      category: "Временное событие",
       imageUrl: "https://picsum.photos/1200/600?random=3",
       imageAiHint: "summer festival banner",
       description: `
-        <p>The longest day of the year approaches! Join the inhabitants of Gardariki in celebrating the Summer Solstice with feasting, games, and ancient rituals. This limited-time event brings new activities and exclusive rewards.</p>
+        <p>Приближается самый длинный день в году! Присоединяйтесь к жителям Гардарики в праздновании Летнего Солнцестояния с пиршествами, играми и древними ритуалами. Это временное событие приносит новые активности и эксклюзивные награды.</p>
       `,
       activities: [
-        { name: "Sunstone Ritual", description: "Help the priests gather Sunstone Fragments to power the Solstice Beacon and earn event currency." },
-        { name: "Trial of Flames", description: "Test your combat prowess against fiery spirits in a challenging new event domain." },
-        { name: "Mead & Merriment", description: "Participate in mini-games like archery contests and drinking competitions in the festival grounds." },
-        { name: "Log-in Bonus", description: "Receive daily rewards just for logging in during the event period." }
+        { name: "Ритуал Солнечного Камня", description: "Помогите жрецам собрать Фрагменты Солнечного Камня, чтобы зажечь Маяк Солнцестояния и заработать валюту события." },
+        { name: "Испытание Пламени", description: "Проверьте свое боевое мастерство против огненных духов в новом сложном домене события." },
+        { name: "Мед и Веселье", description: "Участвуйте в мини-играх, таких как соревнования по стрельбе из лука и состязания по выпивке на фестивальных площадках." },
+        { name: "Бонус за вход", description: "Получайте ежедневные награды просто за вход в игру во время периода события." }
       ],
       rewards: [
-        { name: "Solstice Crown (Cosmetic)", imageUrl: "https://picsum.photos/100/100?random=r1", dataAiHint: "golden crown icon" },
-        { name: "Sunpetal Weapon Augment", imageUrl: "https://picsum.photos/100/100?random=r2", dataAiHint: "glowing flower item" },
-        { name: "Event Currency & Upgrade Materials", imageUrl: "https://picsum.photos/100/100?random=r3", dataAiHint: "gold coins pile" },
-        { name: "Exclusive Food Recipes", imageUrl: "https://picsum.photos/100/100?random=r4", dataAiHint: "recipe book icon" }
+        { name: "Корона Солнцестояния (Косметика)", imageUrl: "https://picsum.photos/100/100?random=r1", dataAiHint: "golden crown icon" },
+        { name: "Улучшение оружия Солнечный Лепесток", imageUrl: "https://picsum.photos/100/100?random=r2", dataAiHint: "glowing flower item" },
+        { name: "Валюта события и материалы для улучшения", imageUrl: "https://picsum.photos/100/100?random=r3", dataAiHint: "gold coins pile" },
+        { name: "Эксклюзивные рецепты еды", imageUrl: "https://picsum.photos/100/100?random=r4", dataAiHint: "recipe book icon" }
       ]
     },
     // Add more events
@@ -44,7 +44,7 @@ export default async function EventDetailsPage({ params }: { params: { slug: str
   const event = await getEventDetails(params.slug);
 
   if (!event) {
-    return <div className="container mx-auto py-12 px-4 text-center">Event not found.</div>;
+    return <div className="container mx-auto py-12 px-4 text-center">Событие не найдено.</div>;
   }
 
   return (
@@ -54,7 +54,7 @@ export default async function EventDetailsPage({ params }: { params: { slug: str
           {/* Link back to a potential events list page or homepage news */}
           <Link href="/#news">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back
+            Назад
           </Link>
         </Button>
       </div>
@@ -85,7 +85,7 @@ export default async function EventDetailsPage({ params }: { params: { slug: str
 
         {/* Activities Section */}
         <section className="mt-10">
-            <h2 className="mb-6 text-2xl font-semibold md:text-3xl">Event Activities</h2>
+            <h2 className="mb-6 text-2xl font-semibold md:text-3xl">Активности События</h2>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {event.activities.map((activity: any, index: number) => (
                      <Card key={index} className="shadow-sm">
@@ -102,7 +102,7 @@ export default async function EventDetailsPage({ params }: { params: { slug: str
 
          {/* Rewards Section */}
         <section className="mt-10">
-            <h2 className="mb-6 text-2xl font-semibold md:text-3xl">Exclusive Rewards</h2>
+            <h2 className="mb-6 text-2xl font-semibold md:text-3xl">Эксклюзивные Награды</h2>
              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                  {event.rewards.map((reward: any, index: number) => (
                     <Card key={index} className="flex flex-col items-center p-4 text-center shadow-sm">

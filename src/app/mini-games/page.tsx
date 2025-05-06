@@ -6,9 +6,9 @@ import Link from "next/link";
 export default function MiniGamesPage() {
   return (
     <div className="container mx-auto max-w-screen-lg py-12 px-4">
-      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Gardariki Mini-Games</h1>
+      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Мини-игры Гардарики</h1>
       <p className="mb-12 text-center text-lg text-muted-foreground">
-        Take a break from the main adventure and enjoy these side experiences set in the world of Gardariki.
+        Отдохните от основного приключения и насладитесь этими побочными развлечениями в мире Гардарики.
       </p>
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -16,23 +16,23 @@ export default function MiniGamesPage() {
         <Card className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-primary/20">
           <Image
             src="https://picsum.photos/600/400?random=mg1"
-            alt="Visual Novel Scene"
+            alt="Сцена визуальной новеллы"
             width={600}
             height={400}
             className="h-56 w-full object-cover"
             data-ai-hint="visual novel screenshot"
           />
           <CardHeader>
-            <CardTitle className="text-2xl">Tales of the Hearth</CardTitle>
-            <CardDescription>Interactive visual novels exploring untold stories of Gardariki's inhabitants.</CardDescription>
+            <CardTitle className="text-2xl">Сказания Очага</CardTitle>
+            <CardDescription>Интерактивные визуальные новеллы, раскрывающие нерассказанные истории жителей Гардарики.</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="mb-4 text-sm text-muted-foreground">
-              Make choices that shape the narrative and uncover hidden lore. Experience heartwarming tales and thrilling encounters from new perspectives.
+              Принимайте решения, которые формируют повествование и раскрывают скрытую историю. Переживите трогательные истории и захватывающие встречи с новых точек зрения.
             </p>
             {/* Link to actual visual novel section or external platform */}
             <Button variant="outline" disabled>
-               Coming Soon
+               Скоро
             </Button>
           </CardContent>
         </Card>
@@ -41,23 +41,23 @@ export default function MiniGamesPage() {
         <Card className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-primary/20">
           <Image
             src="https://picsum.photos/600/400?random=mg2"
-            alt="Slavic Board Game"
+            alt="Славянская настольная игра"
             width={600}
             height={400}
             className="h-56 w-full object-cover"
             data-ai-hint="fantasy board game"
           />
           <CardHeader>
-            <CardTitle className="text-2xl">Kosti & Runes</CardTitle>
-            <CardDescription>A strategic digital board game of chance and foresight inspired by ancient Slavic pastimes.</CardDescription>
+            <CardTitle className="text-2xl">Кости и Руны</CardTitle>
+            <CardDescription>Стратегическая цифровая настольная игра на удачу и предвидение, вдохновленная древними славянскими развлечениями.</CardDescription>
           </CardHeader>
           <CardContent>
             <p className="mb-4 text-sm text-muted-foreground">
-              Challenge friends or AI opponents in this game of strategy. Roll the bones, interpret the runes, and outmaneuver your rivals to claim victory.
+              Бросьте вызов друзьям или ИИ-оппонентам в этой стратегической игре. Бросайте кости, толкуйте руны и перехитрите своих соперников, чтобы одержать победу.
             </p>
              {/* Link to actual board game or information */}
              <Button variant="outline" disabled>
-                Learn More (Coming Soon)
+                Узнать больше (Скоро)
              </Button>
           </CardContent>
         </Card>
@@ -66,12 +66,12 @@ export default function MiniGamesPage() {
          {/*
          <Card className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-primary/20">
            <CardHeader>
-             <CardTitle className="text-2xl">More Games to Come!</CardTitle>
-             <CardDescription>We're always working on new ways to experience Gardariki.</CardDescription>
+             <CardTitle className="text-2xl">Скоро будет больше игр!</CardTitle>
+             <CardDescription>Мы всегда работаем над новыми способами познакомиться с Гардарикой.</CardDescription>
            </CardHeader>
            <CardContent>
              <p className="text-sm text-muted-foreground">
-               Stay tuned for more exciting mini-games and side activities!
+               Следите за новостями о других захватывающих мини-играх и побочных активностях!
              </p>
            </CardContent>
          </Card>

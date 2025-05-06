@@ -7,18 +7,18 @@ import Image from "next/image";
 
 // Placeholder Data - Replace with actual data fetching
 const userProfile = {
-  nickname: "ValiantHero42",
+  nickname: "ДоблестныйГерой42",
   avatarUrl: "https://picsum.photos/100/100?random=user",
   joinDate: "2023-05-15",
   overallProgress: 78,
   achievementsUnlocked: 152,
-  totalPlaytime: "350 hours",
+  totalPlaytime: "350 часов",
 };
 
 const characters = [
-  { id: 1, name: "Svetlana", level: 65, rarity: "Epic", imageUrl: "https://picsum.photos/150/200?random=char1", progress: 85, role: "Tank/Support", element: "Thunder" },
-  { id: 2, name: "Ratibor", level: 70, rarity: "Legendary", imageUrl: "https://picsum.photos/150/200?random=char2", progress: 92, role: "DPS/Ranged", element: "Nature" },
-  { id: 3, name: "Volodar", level: 60, rarity: "Rare", imageUrl: "https://picsum.photos/150/200?random=char3", progress: 70, role: "Control/Magic", element: "Rune" },
+  { id: 1, name: "Светлана", level: 65, rarity: "Эпический", imageUrl: "https://picsum.photos/150/200?random=char1", progress: 85, role: "Танк/Поддержка", element: "Гром" },
+  { id: 2, name: "Ратибор", level: 70, rarity: "Легендарный", imageUrl: "https://picsum.photos/150/200?random=char2", progress: 92, role: "ДПС/Дальний бой", element: "Природа" },
+  { id: 3, name: "Володар", level: 60, rarity: "Редкий", imageUrl: "https://picsum.photos/150/200?random=char3", progress: 70, role: "Контроль/Магия", element: "Руна" },
   // Add more characters
 ];
 
@@ -32,7 +32,7 @@ const playerStats = {
 export default function ProfilePage() {
   return (
     <div className="container mx-auto max-w-screen-xl py-12 px-4">
-      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Player Profile</h1>
+      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Профиль Игрока</h1>
 
       {/* Profile Summary Card */}
       <Card className="mb-8 overflow-hidden shadow-lg">
@@ -43,17 +43,17 @@ export default function ProfilePage() {
           </Avatar>
           <div>
             <CardTitle className="text-3xl">{userProfile.nickname}</CardTitle>
-            <CardDescription>Joined: {new Date(userProfile.joinDate).toLocaleDateString()}</CardDescription>
+            <CardDescription>Присоединился: {new Date(userProfile.joinDate).toLocaleDateString()}</CardDescription>
             <div className="mt-2 flex items-center space-x-2">
-              <Badge variant="secondary">Level {Math.floor(userProfile.overallProgress / 2)}</Badge> {/* Example level calculation */}
+              <Badge variant="secondary">Уровень {Math.floor(userProfile.overallProgress / 2)}</Badge> {/* Example level calculation */}
               <Badge variant="outline">{userProfile.totalPlaytime}</Badge>
             </div>
           </div>
         </CardHeader>
         <CardContent className="p-6">
-           <h3 className="mb-2 text-lg font-semibold">Overall Progress</h3>
+           <h3 className="mb-2 text-lg font-semibold">Общий Прогресс</h3>
            <Progress value={userProfile.overallProgress} className="w-full" />
-           <p className="mt-1 text-right text-sm text-muted-foreground">{userProfile.overallProgress}% Complete</p>
+           <p className="mt-1 text-right text-sm text-muted-foreground">{userProfile.overallProgress}% Завершено</p>
         </CardContent>
       </Card>
 
@@ -61,8 +61,8 @@ export default function ProfilePage() {
         {/* Character Roster */}
         <Card className="lg:col-span-2 shadow-md">
           <CardHeader>
-            <CardTitle>Character Roster</CardTitle>
-            <CardDescription>Your collection of heroes in Gardariki.</CardDescription>
+            <CardTitle>Состав Персонажей</CardTitle>
+            <CardDescription>Ваша коллекция героев в Гардарике.</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
@@ -78,10 +78,10 @@ export default function ProfilePage() {
                   />
                   <div className="p-4">
                     <h4 className="mb-1 font-semibold">{char.name}</h4>
-                    <p className="text-sm text-muted-foreground">Level {char.level}</p>
+                    <p className="text-sm text-muted-foreground">Уровень {char.level}</p>
                     <Badge
-                      variant={char.rarity === 'Legendary' ? 'default' : char.rarity === 'Epic' ? 'secondary' : 'outline'}
-                      className={`mt-1 ${char.rarity === 'Legendary' ? 'bg-yellow-600 text-white' : char.rarity === 'Epic' ? 'bg-purple-600 text-white' : ''}`}
+                      variant={char.rarity === 'Легендарный' ? 'default' : char.rarity === 'Эпический' ? 'secondary' : 'outline'}
+                      className={`mt-1 ${char.rarity === 'Легендарный' ? 'bg-yellow-600 text-white' : char.rarity === 'Эпический' ? 'bg-purple-600 text-white' : ''}`}
                     >
                       {char.rarity}
                     </Badge>
@@ -97,30 +97,30 @@ export default function ProfilePage() {
         {/* Player Statistics */}
         <Card className="shadow-md">
           <CardHeader>
-            <CardTitle>Player Statistics</CardTitle>
-            <CardDescription>Your notable achievements and stats.</CardDescription>
+            <CardTitle>Статистика Игрока</CardTitle>
+            <CardDescription>Ваши заметные достижения и статистика.</CardDescription>
           </CardHeader>
           <CardContent>
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell className="font-medium">Battles Won</TableCell>
+                  <TableCell className="font-medium">Выиграно Битв</TableCell>
                   <TableCell className="text-right">{playerStats.battlesWon.toLocaleString()}</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Quests Completed</TableCell>
+                  <TableCell className="font-medium">Завершено Квестов</TableCell>
                   <TableCell className="text-right">{playerStats.questsCompleted.toLocaleString()}</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Regions Explored</TableCell>
+                  <TableCell className="font-medium">Исследовано Регионов</TableCell>
                   <TableCell className="text-right">{playerStats.regionsExplored}</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Highest Damage Dealt</TableCell>
+                  <TableCell className="font-medium">Наибольший Нанесенный Урон</TableCell>
                   <TableCell className="text-right text-primary font-semibold">{playerStats.highestDamage.toLocaleString()}</TableCell>
                 </TableRow>
                  <TableRow>
-                  <TableCell className="font-medium">Achievements Unlocked</TableCell>
+                  <TableCell className="font-medium">Разблокировано Достижений</TableCell>
                   <TableCell className="text-right">{userProfile.achievementsUnlocked}</TableCell>
                 </TableRow>
               </TableBody>

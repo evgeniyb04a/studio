@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Gardariki Official',
-  description: 'Official website for the Gardariki game by Clockwork Drakkar',
+  title: 'Гардарики Официальный',
+  description: 'Официальный сайт игры Гардарики от Clockwork Drakkar',
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="ru" className="dark">
       <body
         className={cn(
           `${geistSans.variable} ${geistMono.variable} antialiased`,

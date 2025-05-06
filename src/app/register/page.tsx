@@ -10,42 +10,42 @@ export default function RegisterPage() {
        {/* Adjusted min-height calculation for header/footer */}
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl">Create Your Gardariki Account</CardTitle>
-          <CardDescription>Join the adventure! Sign up to start playing.</CardDescription>
+          <CardTitle className="text-2xl">Создайте свой аккаунт в Гардарике</CardTitle>
+          <CardDescription>Присоединяйтесь к приключению! Зарегистрируйтесь, чтобы начать играть.</CardDescription>
         </CardHeader>
         <CardContent>
            {/* This is a placeholder form. Registration logic needs implementation. */}
           <form className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="username">Username</Label>
-              <Input id="username" placeholder="Choose your hero name" required />
+              <Label htmlFor="username">Имя пользователя</Label>
+              <Input id="username" placeholder="Выберите имя героя" required />
             </div>
              <div className="space-y-2">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">Адрес эл. почты</Label>
               <Input id="email" type="email" placeholder="your.email@example.com" required />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
-              <Input id="password" type="password" placeholder="Choose a strong password" required />
+              <Label htmlFor="password">Пароль</Label>
+              <Input id="password" type="password" placeholder="Выберите надежный пароль" required />
             </div>
              <div className="space-y-2">
-              <Label htmlFor="confirm-password">Confirm Password</Label>
-              <Input id="confirm-password" type="password" placeholder="Retype your password" required />
+              <Label htmlFor="confirm-password">Подтвердите пароль</Label>
+              <Input id="confirm-password" type="password" placeholder="Введите пароль еще раз" required />
             </div>
             <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-              Register
+              Зарегистрироваться
             </Button>
           </form>
            <p className="mt-4 text-center text-sm text-muted-foreground">
-            Already have an account?{' '}
+            Уже есть аккаунт?{' '}
             <Link href="/login" className="font-medium text-primary hover:underline">
-              Log In
+              Войти
             </Link>
           </p>
            <p className="mt-2 text-center text-xs text-muted-foreground">
-            By registering, you agree to our{' '}
-            <Link href="/terms" className="underline hover:text-primary">Terms of Service</Link> and{' '}
-            <Link href="/privacy" className="underline hover:text-primary">Privacy Policy</Link>.
+            Регистрируясь, вы соглашаетесь с нашими{' '}
+            <Link href="/terms" className="underline hover:text-primary">Условиями обслуживания</Link> и{' '}
+            <Link href="/privacy" className="underline hover:text-primary">Политикой конфиденциальности</Link>.
           </p>
         </CardContent>
       </Card>

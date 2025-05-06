@@ -4,26 +4,26 @@ import Image from 'next/image';
 
 // Placeholder data - replace with actual media URLs and descriptions
 const trailers = [
-  { id: 1, title: "Gardariki - Official Announce Trailer", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", thumbnailUrl: "https://picsum.photos/640/360?random=t1", description: "First look at the world and gameplay of Gardariki." },
-  { id: 2, title: "Character Spotlight: Svetlana", videoUrl: "https://www.youtube.com/embed/oHg5SJYRHA0", thumbnailUrl: "https://picsum.photos/640/360?random=t2", description: "Dive deep into the abilities and story of Svetlana." },
+  { id: 1, title: "Гардарики - Официальный трейлер-анонс", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", thumbnailUrl: "https://picsum.photos/640/360?random=t1", description: "Первый взгляд на мир и геймплей Гардарики." },
+  { id: 2, title: "В центре внимания: Светлана", videoUrl: "https://www.youtube.com/embed/oHg5SJYRHA0", thumbnailUrl: "https://picsum.photos/640/360?random=t2", description: "Погрузитесь в способности и историю Светланы." },
   // Add more trailers
 ];
 
 const screenshots = [
-  { id: 1, alt: "Screenshot of Sunstone Steppes", imageUrl: "https://picsum.photos/1280/720?random=s1", dataAiHint: "fantasy landscape steppe" },
-  { id: 2, alt: "Screenshot of dynamic combat", imageUrl: "https://picsum.photos/1280/720?random=s2", dataAiHint: "action game combat" },
-  { id: 3, alt: "Screenshot of Whispering Woods", imageUrl: "https://picsum.photos/1280/720?random=s3", dataAiHint: "enchanted forest game" },
-  { id: 4, alt: "Screenshot of character customization", imageUrl: "https://picsum.photos/1280/720?random=s4", dataAiHint: "character creation screen" },
-  { id: 5, alt: "Screenshot of a village", imageUrl: "https://picsum.photos/1280/720?random=s5", dataAiHint: "medieval village rpg" },
-  { id: 6, alt: "Screenshot of a boss fight", imageUrl: "https://picsum.photos/1280/720?random=s6", dataAiHint: "fantasy boss battle" },
+  { id: 1, alt: "Скриншот Солнечных Степей", imageUrl: "https://picsum.photos/1280/720?random=s1", dataAiHint: "fantasy landscape steppe" },
+  { id: 2, alt: "Скриншот динамичного боя", imageUrl: "https://picsum.photos/1280/720?random=s2", dataAiHint: "action game combat" },
+  { id: 3, alt: "Скриншот Шепчущего Леса", imageUrl: "https://picsum.photos/1280/720?random=s3", dataAiHint: "enchanted forest game" },
+  { id: 4, alt: "Скриншот кастомизации персонажа", imageUrl: "https://picsum.photos/1280/720?random=s4", dataAiHint: "character creation screen" },
+  { id: 5, alt: "Скриншот деревни", imageUrl: "https://picsum.photos/1280/720?random=s5", dataAiHint: "medieval village rpg" },
+  { id: 6, alt: "Скриншот битвы с боссом", imageUrl: "https://picsum.photos/1280/720?random=s6", dataAiHint: "fantasy boss battle" },
   // Add more screenshots
 ];
 
 const conceptArt = [
-  { id: 1, alt: "Concept art for Volodar", imageUrl: "https://picsum.photos/800/1000?random=c1", dataAiHint: "wizard character concept" },
-  { id: 2, alt: "Concept art for Frozen Citadel", imageUrl: "https://picsum.photos/1200/700?random=c2", dataAiHint: "ice castle environment" },
-  { id: 3, alt: "Concept art for mythical creature", imageUrl: "https://picsum.photos/900/900?random=c3", dataAiHint: "fantasy creature design" },
-  { id: 4, alt: "Early character sketches", imageUrl: "https://picsum.photos/1000/800?random=c4", dataAiHint: "character design sketches" },
+  { id: 1, alt: "Концепт-арт Володара", imageUrl: "https://picsum.photos/800/1000?random=c1", dataAiHint: "wizard character concept" },
+  { id: 2, alt: "Концепт-арт Ледяной Цитадели", imageUrl: "https://picsum.photos/1200/700?random=c2", dataAiHint: "ice castle environment" },
+  { id: 3, alt: "Концепт-арт мифического существа", imageUrl: "https://picsum.photos/900/900?random=c3", dataAiHint: "fantasy creature design" },
+  { id: 4, alt: "Ранние наброски персонажей", imageUrl: "https://picsum.photos/1000/800?random=c4", dataAiHint: "character design sketches" },
   // Add more concept art
 ];
 
@@ -31,16 +31,16 @@ const conceptArt = [
 export default function MediaPage() {
   return (
     <div className="container mx-auto max-w-screen-xl py-12 px-4">
-      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Media Gallery</h1>
+      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Медиа Галерея</h1>
       <p className="mb-12 text-center text-lg text-muted-foreground">
-        Witness the beauty and action of Gardariki through trailers, screenshots, and concept art.
+        Оцените красоту и динамику Гардарики через трейлеры, скриншоты и концепт-арты.
       </p>
 
       <Tabs defaultValue="trailers" className="w-full">
         <TabsList className="mb-8 grid w-full grid-cols-3">
-          <TabsTrigger value="trailers">Trailers</TabsTrigger>
-          <TabsTrigger value="screenshots">Screenshots</TabsTrigger>
-          <TabsTrigger value="concept-art">Concept Art</TabsTrigger>
+          <TabsTrigger value="trailers">Трейлеры</TabsTrigger>
+          <TabsTrigger value="screenshots">Скриншоты</TabsTrigger>
+          <TabsTrigger value="concept-art">Концепт-арт</TabsTrigger>
         </TabsList>
 
         {/* Trailers Tab */}

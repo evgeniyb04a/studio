@@ -8,46 +8,46 @@ export function Footer() {
     <footer className="border-t border-border/40 bg-background">
       <div className="container mx-auto grid max-w-screen-2xl grid-cols-1 gap-8 px-4 py-12 md:grid-cols-3">
         <div>
-          <h3 className="mb-4 text-lg font-semibold">Gardariki</h3>
+          <h3 className="mb-4 text-lg font-semibold">Гардарики</h3>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Clockwork Drakkar. All rights reserved.
+            © {new Date().getFullYear()} Clockwork Drakkar. Все права защищены.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            Gardariki and Clockwork Drakkar are trademarks or registered trademarks of Clockwork Drakkar.
+            Гардарики и Clockwork Drakkar являются товарными знаками или зарегистрированными товарными знаками Clockwork Drakkar.
           </p>
         </div>
         <div>
-          <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
+          <h3 className="mb-4 text-lg font-semibold">Быстрые ссылки</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/game-info" className="text-muted-foreground hover:text-foreground">
-                Game Info
+                Об игре
               </Link>
             </li>
             <li>
               <Link href="/media" className="text-muted-foreground hover:text-foreground">
-                Media Gallery
+                Медиа Галерея
               </Link>
             </li>
              <li>
               <Link href="/studio-info" className="text-muted-foreground hover:text-foreground">
-                Studio Info
+                О Студии
               </Link>
             </li>
             <li>
               <Link href="/terms" className="text-muted-foreground hover:text-foreground">
-                Terms of Service
+                Условия обслуживания
               </Link>
             </li>
             <li>
               <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
-                Privacy Policy
+                Политика конфиденциальности
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h3 className="mb-4 text-lg font-semibold">Follow Us</h3>
+          <h3 className="mb-4 text-lg font-semibold">Подписывайтесь</h3>
           <div className="flex space-x-4">
             {/* Replace with actual social media links */}
             <Link href="#" aria-label="Facebook" className="text-muted-foreground hover:text-foreground">
@@ -64,10 +64,10 @@ export function Footer() {
             </Link>
             {/* Add more social links as needed */}
           </div>
-          <h3 className="mt-8 mb-4 text-lg font-semibold">Newsletter</h3>
+          <h3 className="mt-8 mb-4 text-lg font-semibold">Новостная рассылка</h3>
            <form className="flex space-x-2">
-            <Input type="email" placeholder="Enter your email" className="max-w-lg flex-1" />
-            <Button type="submit" variant="secondary">Subscribe</Button>
+            <Input type="email" placeholder="Введите ваш email" className="max-w-lg flex-1" />
+            <Button type="submit" variant="secondary">Подписаться</Button>
           </form>
         </div>
       </div>

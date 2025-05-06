@@ -7,65 +7,65 @@ import Image from "next/image";
 export default function StudioInfoPage() {
   return (
     <div className="container mx-auto max-w-screen-lg py-12 px-4">
-      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Clockwork Drakkar Studio</h1>
+      <h1 className="mb-8 text-center text-4xl font-bold md:text-5xl">Студия Clockwork Drakkar</h1>
       <p className="mb-12 text-center text-lg text-muted-foreground">
-        Meet the team behind Gardariki and learn more about our passion for creating immersive worlds.
+        Познакомьтесь с командой, стоящей за Гардарикой, и узнайте больше о нашей страсти к созданию захватывающих миров.
       </p>
 
       <Card className="overflow-hidden shadow-lg">
          <Image
             src="https://picsum.photos/1200/400?random=studio"
-            alt="Clockwork Drakkar Studio Banner"
+            alt="Баннер студии Clockwork Drakkar"
             width={1200}
             height={400}
             className="h-56 w-full object-cover"
             data-ai-hint="game development studio"
           />
         <CardHeader className="p-6">
-          <CardTitle className="text-2xl">Our Mission</CardTitle>
-          <CardDescription>Crafting unique experiences rooted in rich narratives and compelling gameplay.</CardDescription>
+          <CardTitle className="text-2xl">Наша Миссия</CardTitle>
+          <CardDescription>Создание уникального опыта, основанного на богатых повествованиях и увлекательном геймплее.</CardDescription>
         </CardHeader>
         <CardContent className="p-6 pt-0">
           <p className="mb-6 text-muted-foreground">
-            Clockwork Drakkar is an independent game development studio based in [Studio Location - e.g., Saint Petersburg, Russia]. We are a team of dedicated artists, programmers, and storytellers united by our love for Slavic culture, mythology, and the art of interactive entertainment. Gardariki is our flagship project, born from a desire to bring the fascinating world of Slavic legends to a global audience through a modern RPG experience.
+            Clockwork Drakkar - независимая студия разработки игр, базирующаяся в [Местоположение студии - например, Санкт-Петербург, Россия]. Мы - команда преданных своему делу художников, программистов и рассказчиков, объединенных любовью к славянской культуре, мифологии и искусству интерактивных развлечений. Гардарика - наш флагманский проект, рожденный из желания донести увлекательный мир славянских легенд до мировой аудитории через современный RPG-опыт.
           </p>
 
           <Separator className="my-6" />
 
-          <h3 className="mb-4 text-xl font-semibold">Contact Us</h3>
+          <h3 className="mb-4 text-xl font-semibold">Свяжитесь с Нами</h3>
           <div className="space-y-3 text-muted-foreground">
             <div className="flex items-center space-x-3">
               <MapPin className="h-5 w-5 flex-shrink-0 text-primary" />
-              <span>[Studio Address, e.g., Nevsky Prospect 1, Saint Petersburg, Russia]</span>
+              <span>[Адрес студии, например, Невский проспект 1, Санкт-Петербург, Россия]</span>
             </div>
              <div className="flex items-center space-x-3">
               <Mail className="h-5 w-5 flex-shrink-0 text-primary" />
               <Link href="mailto:contact@clockworkdrakkar.example.com" className="hover:text-foreground">
-                contact@clockworkdrakkar.example.com {/* Replace with actual email */}
+                contact@clockworkdrakkar.example.com {/* Замените на реальный email */}
               </Link>
             </div>
              <div className="flex items-center space-x-3">
               <Phone className="h-5 w-5 flex-shrink-0 text-primary" />
-              <span>+7 [Your Phone Number]</span> {/* Replace with actual phone */}
+              <span>+7 [Ваш номер телефона]</span> {/* Замените на реальный телефон */}
             </div>
              <div className="flex items-center space-x-3">
               <Globe className="h-5 w-5 flex-shrink-0 text-primary" />
                <Link href="https://clockworkdrakkar.example.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-                clockworkdrakkar.example.com {/* Replace with actual website */}
+                 clockworkdrakkar.example.com {/* Замените на реальный веб-сайт */}
               </Link>
             </div>
              <div className="flex items-center space-x-3">
               <Linkedin className="h-5 w-5 flex-shrink-0 text-primary" />
                <Link href="https://linkedin.com/company/clockwork-drakkar-example" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-                 LinkedIn Profile {/* Replace with actual LinkedIn */}
+                 Профиль LinkedIn {/* Замените на реальный LinkedIn */}
               </Link>
             </div>
           </div>
 
            <Separator className="my-6" />
 
-           <h3 className="mb-4 text-xl font-semibold">Follow Our Journey</h3>
-            <p className="mb-4 text-muted-foreground">Stay updated on Gardariki's development and studio news:</p>
+           <h3 className="mb-4 text-xl font-semibold">Следите за Нашим Путем</h3>
+            <p className="mb-4 text-muted-foreground">Будьте в курсе разработки Гардарики и новостей студии:</p>
              {/* Reuse Footer social links or add specific ones */}
            <div className="flex space-x-4">
             {/* Links copied from Footer - ensure consistency */}
